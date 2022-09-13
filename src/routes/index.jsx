@@ -4,7 +4,7 @@ import LayoutWrapper from '../layout';
 import Login from '../pages/auth/Login';
 import Register from '../pages/auth/Register';
 import Home from '../pages/Home/Home';
-import { ROUTER } from './Routes';
+import ROUTER from './Routes';
 
 export default function Routes() {
   return (
@@ -12,8 +12,8 @@ export default function Routes() {
       {Object.values(ROUTER).map((router, idx) =>
         router.hasLayout ? (
           <Route key={idx}>
-            <Route key={idx} path={'/login'} element={<Login />} />
-            <Route key={idx} path={'/register'} element={<Register />} />
+            <Route key={idx} path="/login" element={<Login />} />
+            <Route key={idx} path="/register" element={<Register />} />
             <Route
               key={idx}
               element={router.cate ? <LayoutWrapper /> : <Home />}

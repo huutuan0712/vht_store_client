@@ -1,0 +1,4 @@
+tailwind.config.cjs
+postcss.config.cjs
+vite.config.js
+jsconfig.json

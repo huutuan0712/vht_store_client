@@ -1,11 +1,9 @@
-import StoreProvider from './providers/StoreProvider';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import StoreProvider from './providers/StoreProvider';
 import App from './App';
 import './index.css';
-import '../src/styles/index.css';
-import 'slick-carousel/slick/slick-theme.css';
-import 'slick-carousel/slick/slick.css';
+import './styles/index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

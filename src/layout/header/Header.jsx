@@ -3,7 +3,7 @@ import { BiCartAlt, BiUser } from 'react-icons/bi';
 import { HiOutlineUser } from 'react-icons/hi';
 import { Link } from 'react-router-dom';
 import Sun from '../../assets/img/sun.webp';
-import { Navbar } from '../../pages/Home/header';
+import Navbar from '../../pages/Home/header';
 
 export default function Header() {
   const [selectText, setSelectText] = useState(1);
@@ -12,7 +12,7 @@ export default function Header() {
     <header className="px-24 pb-5 pt-10">
       <div className="flex justify-between item-center mb-16">
         <Link
-          to={'/login'}
+          to="/login"
           className="flex  item-center text-base font-semibold px-5 gap-2  "
         >
           <HiOutlineUser className="h-6 w-6" /> Login
@@ -25,7 +25,7 @@ export default function Header() {
             </span>
           </Link>
         </div>
-        <Link to={'/cart'}>
+        <Link to="/cart">
           <div className="flex items-center px-3 relative">
             <BiCartAlt className="w-8 h-8 p-1 " />
             <div className="absolute left-0 top-0 h-5 w-5  bg-red-500 rounded-full text-center text-white">

@@ -1,16 +1,13 @@
 import axios from 'axios';
-import { config } from '../config';
-
 import queryString from 'query-string';
+import config from '../config';
 
 const axiosClient = axios.create({
   baseURL: config.BASE_URL,
   headers: {
     'Content-Type': 'application/json',
   },
-  paramsSerializer: (params) => {
-    return queryString.stringify(params);
-  },
+  paramsSerializer: (params) => queryString.stringify(params),
 });
 
 // axiosClient.interceptors.request.use(

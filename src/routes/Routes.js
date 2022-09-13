@@ -8,7 +8,7 @@ import NotFound from '../pages/NotFound/NotFound';
 import Detail from '../pages/Product/Detail';
 import Women from '../pages/Women/Women';
 
-export const ROUTER = {
+const ROUTER = {
   HOME: {
     path: '/',
     component: Home,
@@ -55,3 +55,5 @@ export const ROUTER = {
     component: NotFound,
   },
 };
+
+export default ROUTER;
